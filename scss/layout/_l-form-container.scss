@@ -1,0 +1,68 @@
+@use "../colors";
+
+@media print, screen and (min-width: 741px) {
+/* For PC */
+
+.l-form-container {
+  width: 1100px;
+  margin: 0 auto 100px;
+  padding: 60px 80px;
+
+  color: colors.$light-text;
+  background-color: colors.$form-bg;
+
+  &__flow {
+    margin-bottom: 24px;
+  }
+
+  &__inner {
+    padding: 24px;
+
+    color: colors.$dark-text;
+    background-color: colors.$light-background;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 24px;
+  }
+
+  &__buttons-row {
+    display: flex;
+    width: 100%;
+  }
+}
+
+}
+
+
+@media print, screen and (max-width: 740px) {
+/* For SP */
+
+.l-form-container {
+  width: 100%;
+  margin: 0 auto 20%;
+  &__flow {
+    margin: 0 8px 16px;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 24px;
+  }
+
+  &__buttons-row {
+    display: flex;
+    flex-direction: column-reverse;
+
+    width: 100%;
+  }
+}
+
+}

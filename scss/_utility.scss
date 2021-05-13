@@ -1,0 +1,40 @@
+
+@media print, screen and (max-width: 760px) {
+  .pc {
+    display: none !important;
+  }
+  .sp-mini {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .sp-mini {
+    display: inherit!important;
+  }
+}
+
+@media print, screen and (min-width: 761px) {
+  .sp {
+    display: none !important;
+  }
+  .sp-mini {
+    display: none !important;
+  }
+}
+
+
+
+/* ------------
+
+Clear Fix
+
+------------ */
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}

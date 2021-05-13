@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+
+/* ------------ colors ------------ */
+
+//basic-color
+$black: #1e1e1e;//ベースの文字色
+$white: #fff;
+$gray: #9e9e9e;//ボタンの枠
+$light-gray: #9e9e9e;//ライン
+$light-gray02:#f1f1f1;
+$light-gray03:#e8e8e8;
+$dark-gray: #545454;//ヘッダーの文字色
+$red: #f74432;
+$light-pink: #f8e2e6;
+$blue:#58b2dc;
+$light-blue: #5db2d9;
+$light-blue02: #ddf3fa;
+$orange: #f69125;//ボタンのオレンジ
+$pink: #FF529C;
+$green: #6ACC78;
+$yellow: #ffd700;//ボタンの黄色
+
+/* ------------------------------- */
+
+
+
+/* ------------ text-color ------------ */
+
+//text-base-color
+$dark-text: $black;
+$dim-text: $gray;
+$light-text: $white;
+$accent-text: $blue;
+$accent-text02: $blue;
+
+//text-alert-color
+$alert-text: $red;
+$alert-dark-background: $red;
+$alert-light-background: $light-pink;
+
+//text-selected-color
+$selected-txt:$light-blue;
+
+
+/* ------------ border-color ------------ */
+
+$dark-border: $gray;
+$gray-border: $light-gray;
+$light-border: $white;
+$rank-border: $blue;
+$title-border: $blue;
+$accent-border: $blue;
+$accent-light-border: $light-blue02;
+$accent02-border: $blue;
+$accent02-light-border: $light-blue02;
+
+
+/* ------------ background-color ------------ */
+
+$dark-background: $dark-gray;
+$dim-background: $light-gray;
+$dim02-background: $light-gray02;
+$dim03-background: $light-gray03;
+$light-background: $white;
+$accent-background: $blue;
+$accent-light-background: $light-blue;
+$accent02-background: $blue;
+$accent02-light-background: $light-blue02;
+
+
+/* ------------ system-color ------------ */
+
+//text-system-color
+$color-sys01: $blue;//side
+$color-sys02: $light-gray;//bg
+$color-sat: $blue;//カレンダー土曜日
+$color-sun: $red;//カレンダー日曜日
+$color-error: $red;//必須・バリデーション
+$color-error2: $red;//残り必須項目
+$color-a: $blue;//詳細テキスト内のリンク
+
+$btn-sys01: $light-gray;//contact
+$btn-sys02: $blue;//reserve
+$btn-sys03: $blue;//ギャラリー_絞り込み
+$color-pager: $blue;
+$color-next: $blue;
+$color-included: $light-gray;//含まれるもの
+$color-value: $light-gray;//特典
+$color-tb: $black;//レポート・プラン_会場名・期間
+$color-staff: $light-gray;//レポート_スタッフからのメッセージ
+$color-date: $light-gray;//レポート_テーブルデータ
+
+$color-q: $blue;//質問_Q
+$color-a: $black;//質問_A
+
+
+//form
+$form-header:$light-blue02;
+$form-bg:$light-blue02;
+$policy-color:$orange;
+$policy-color-hover:$red;
+$color-current:$blue;//ステップ current
+$step-font-color:$gray;
+$step-font-color-sp:$white;
+
+$btn-thanks:$blue;//thanks トップへ戻る
+$btn-thanks-font:$white;//thanks トップへ戻る
+
+
+/* ------------ cv ------------ */
+$color-cv: $orange;
+$color-cv02: $blue;
+$color-telcv:$blue;
+
+
+/* ------------ menu ------------ */
+$menu_btn: $orange;//メニューボタン
+$menu-title: $black;//メニュータイトル
+$menu-text: $black;//メニューテキスト
+$menu-border: $light-gray;//メニュー下線
+$menu_cv: $blue;//cvボタン
+
+
+/* ------------ NEW ------------ */
+$color-new: $orange;//NEWアイコン背景色
+$new-text: $white;//NEWアイコン文字色
+
+
+
+/* ------------ slick-color ------------ */
+$slick-dots:$light-gray;
+$slick-dots-active:$blue;

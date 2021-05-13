@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+@use "_colors";
+@use "_text";
+
+@use "layout/_wp_article";
+
+@use "layout/_system_common";
+
+@use "layout/_system_news";
+
+
+
+
+.p-item__photo.ph_sys {
+  line-height: 0;
+  position: relative;
+  overflow:hidden;
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1000;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+  }
+}

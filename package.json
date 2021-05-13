@@ -1,0 +1,21 @@
+{
+  "name": "demo_bridal_2021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss:bridal2021/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/team_qh/demo_bridal_2021.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/team_qh/demo_bridal_2021#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "sass": "^1.32.8"
+  }
+}

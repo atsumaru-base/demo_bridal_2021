@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+@use "../_colors";
+@use "../_text";
+
+
+
+/* ------------------------------------
+
+icon
+
+------------------------------------ */
+
+/*  p-item__icons  */
+.p-item__icons {
+  .icon {
+    display: inline-block;
+    font-size: 13px;
+    color: colors.$light-text;
+    text-align: center;
+    padding: 1px 8px;
+  }
+}
+@media screen and (max-width: 740px){
+  .p-item__icons {
+    .icon {
+      padding: 0 8px 1px;
+    }
+  }
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  .ip-item__icons {
+    .icon {
+      padding: 0 8px 4px;
+    }
+  }
+}
+
+.p-item__icons:empty {
+  margin-bottom: 0;
+}
+
+
+
+/* ------------------------------------
+
+new icon
+
+------------------------------------ */
+.new {
+  position: relative;
+}
+
+.new:after {
+  content: "NEW";
+  display: block;
+  position: absolute;
+  z-index: 1000;
+  top: text.$new-top;
+  left: text.$new-left;
+  text-align: center;
+  font-style: normal;
+  font-weight: text.$new-font-weight;
+  font-size: text.$new-font-size;
+  color: colors.$new-text;
+  background: colors.$color-new;
+  font-family: text.$font-new;
+  width: text.$new-width;
+  height: text.$new-height;
+  line-height: text.$new-line-height;
+  border-radius: text.$new-border-radius;
+  letter-spacing: 0;
+}
+
+@media screen and (max-width: 740px){
+  .new:after {
+    font-size: text.$new-font-size-sp;
+    top: text.$new-top-sp;
+    left: text.$new-left-sp;
+    width: text.$new-width-sp;
+    height: text.$new-height-sp;
+    line-height: text.$new-line-height-sp;
+  }
+}
+

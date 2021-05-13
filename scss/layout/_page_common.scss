@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+@use "../_colors";
+@use "../_text";
+
+
+/* ------------------------------------
+
+common
+
+------------------------------------ */
+
+img {
+  width: 100%;
+}
+
+.vertical_writing {
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+}
+
+.yakuhan {
+  font-family: text.$font-yakuhan;
+}
+
+
+
+
+/*  l-wrapper  */
+.l-wrapper {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.l-page {
+  .l-wrapper {
+    background: url(../images/common/bg_header.png) no-repeat top center;
+    padding-top: 10px;
+    background-size: 100% auto;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 740px){
+  .l-page {
+    .l-wrapper {
+      padding-top: 0;
+      background-size: 190% auto;
+    }
+  }
+}
+
+
+/*  list-page__main  */
+.list-page__main {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 761px) {
+  .list-page__main {
+    width: 1200px;
+  }
+  .l-system .list-page__main {
+    width: 1100px;
+  }
+}
+@media screen and (max-width: 740px){
+  .list-page__main {
+    width: 90%;
+  }
+  .l-number .list-page__main {
+    width: auto;
+  }
+}
+
+
+/*  slick-dots  */
+.slick-dots li {
+  width: 10px;
+  height: 10px;
+  margin: 0 12px;
+  background: colors.$slick-dots;
+  &.slick-active {
+    background: colors.$slick-dots-active;
+  }
+}
+
+
+
+
+
+
+/* ------------------------------------
+
+l-table
+
+------------------------------------ */
+.l-table dl {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.3%;
+  dt {
+    background: colors.$accent-background;
+    color: colors.$light-text;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+  }
+  dd {
+    background: colors.$dim02-background;
+    width: 79.5%;
+    padding: 10px 16px;
+    font-weight: 400;
+  }
+}
+@media screen and (max-width: 740px){
+  .l-table dl {
+    dt {
+      font-size: 3.6vw;
+      text-align: center;
+    }
+    dd {
+      font-size: text.$fontsize-base-sp;
+    }
+  }
+}

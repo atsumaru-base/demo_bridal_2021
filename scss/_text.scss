@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+@use "_colors";
+
+
+//font-family
+$font-base: source-han-sans-japanese,sans-serif;//400/500/700
+$font-sub: source-han-serif-japanese,serif;//400/500/700
+$font-tit: source-han-sans-japanese,sans-serif;//400/500/700
+
+$font-yakuhan: "YakuHanJP", $font-base;
+
+$font01: urw-din, sans-serif;//500/600
+$font02: urw-din, sans-serif;//500/600
+
+
+//カレンダーのフォントの設定
+$calender-font: source-han-sans-japanese,sans-serif;
+
+
+//font-size
+$fontsize-base:15px;
+$fontsize-tit:38px;
+$fontsize-sub:14px;
+$fontheight-base:1.8;
+
+$fontsize-base-sp:3.74vw;
+$fontsize-tit-sp:10.14vw;
+
+
+//MVの高さ設定
+$main_height01: 349px;
+$main_height02: 884px;
+$main_height03: 290px;
+
+
+//共通 NEWアイコン
+$font-new: source-han-sans-japanese,sans-serif;
+$new-border-radius: 50%;
+$new-font-weight: 600;
+
+//PC NEWアイコン
+$new-font-size: 14px;//PC文字サイズ
+$new-width: 54px;//PC横
+$new-height: 54px;//PC縦
+$new-line-height: 54px;//PC行間
+$new-top: 10px;
+$new-left: 10px;
+
+//SP NEWアイコン
+$new-font-size-sp: 12px;//SP文字サイズ
+$new-width-sp: 44px;//SP横
+$new-height-sp: 44px;//SP縦
+$new-line-height-sp: 54px;//SP行間
+$new-top-sp: 5px;
+$new-left-sp: 5px;

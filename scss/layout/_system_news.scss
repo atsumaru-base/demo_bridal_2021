@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+@use "../_colors";
+@use "../_text";
+
+
+.l-system.l-news,
+.l-system.l-blog {
+
+  /*  Main と Side
+  *---------------------------------------------------------- */
+  @media print, screen and (min-width:741px){
+    /* for pc */
+    &.l-index .list-page__list {
+      max-width: 850px;
+      width: 78%;
+      float: left;
+    }
+    &.l-index aside.list-page__side {
+      max-width: 200px;
+      width: 20%;
+      float: right;
+    }
+  }
+  @media screen and (max-width: 979px) {
+    /* for sp iPad */
+    &.l-index .list-page__list {
+      width: 100%;
+      float: none;
+    }
+    &.l-index aside.list-page__side {
+      width: 100%;
+      float: none;
+      margin: 0 auto;
+      max-width: 100%;
+      justify-content: space-between;
+      display: flex;
+      .widget {
+        width: 49%;
+      }
+    }
+  }
+  @media screen and (max-width: 480px) {
+    /* for sp Device Only */
+    &.l-index aside.list-page__side {
+      width: 100%;
+      display: block;
+      margin-top: 16%;
+      .widget {
+        width: 100%;
+      }
+    }
+  }
+
+
+  /* list-page__list
+  --------------------------------------------------*/
+  &.l-index .list-page__list h3 {
+    font-size: 18px;
+    padding: 12px 20px;
+    color: colors.$accent-text;
+    border-top: 2px solid colors.$title-border;
+    border-bottom: 2px solid colors.$title-border;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (max-width: 740px){
+    &.l-index .list-page__list h3 {
+      margin-bottom: 6%;
+    }
+  }
+
+
+  &.l-index .list-page__list .l-list .p-item {
+    float: left;
+    border: none;
+    a {
+      padding: 0;
+    }
+  }
+
+  //3columnの場合 ※SPは2カラムと同じ
+  @media screen and (min-width: 761px) {
+    &.l-index .list-page__list .l-list .p-item {
+      &__inner {
+        margin-top: 12px;
+      }
+      &__icons {
+        margin-bottom: 6px;
+      }
+      &__icons:empty {
+        margin-bottom: 0;
+      }
+      &__post-title {
+        max-height: 44px;
+        overflow: hidden;
+        line-height: 1.5;
+      }
+      &__post-date {
+        font-size: 13px;
+        margin-top: 2px;
+      }
+    }
+    &.l-index .list-page__list .l-column_03 .p-item {
+      width: 32%;
+      margin: 0 auto 40px;
+      margin-right: 2%;
+      &__photo.ph_sys {
+        float: none;
+        width: 100%;
+        height: 0;
+        padding-bottom: 66%;
+      }
+      &__inner {
+        float: none;
+        width: 100%;
+      }
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+      &:nth-child(3n+1) {
+        clear: both;
+      }
+    }
+  }
+
+
+
+}/* end -- .l-system.l-news */
+
+

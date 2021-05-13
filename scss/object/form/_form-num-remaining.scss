@@ -1,0 +1,33 @@
+@use "../../colors";
+@use "../../_text";
+@use "../../mixin/mixin";
+
+.form-num-remaining {
+  position: fixed;
+  right: 88px;
+  bottom: 28px;
+  z-index: 1000;
+
+  display: block;
+  padding: 8px 16px;
+
+  color: colors.$light-text;
+  font-size: 16px;
+  line-height: 1.2;
+
+  background: colors.$alert-dark-background;
+  border-radius: 4px;
+
+
+
+  var {
+    font-size: 1.25em;
+    font-style: normal;
+  }
+}
+
+@include mixin.sp {
+  .form-num-remaining {
+    right: 28px;
+  }
+}

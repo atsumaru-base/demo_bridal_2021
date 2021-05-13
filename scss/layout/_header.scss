@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+@use "../_colors";
+@use "../_text";
+
+
+/* ------------------------
+
+l-header
+
+------------------------ */
+
+.l-header {
+  width: 100%;
+  position: fixed;
+  z-index: 8000;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  top: 14px;
+  &__container {
+    width: 96%;
+    margin: 0 auto;
+  }
+  h1 {
+    a {
+      display: flex;
+      align-items: center;
+    }
+    .p-item-logo {
+      span {
+        padding-left: 2px;
+        letter-spacing: 1px;
+        font-size: 17px;
+        padding-top: 12px;
+        display: block;
+      }
+      &__logo {
+        width: 180px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 761px) {
+  .l-header {
+    .p-item-logo {
+      display: inline-block;
+      width: auto;
+      float: left;
+    }
+    .l-gnav {
+      display: inline-block;
+      float: right;
+      padding-top: 13px;
+      padding-right: 14px;
+      ul {
+        display: flex;
+        li {
+          margin-right: 28px;
+        }
+      }
+    }
+    .cv.c-button {
+      float: right;
+      width: 261px;
+      font-size: 14px;
+      border: 2px solid colors.$orange;
+      span.en {
+        font-size: 25px;
+        padding-left: 4px;
+        padding-right: 12px;
+        display: inline-block;
+        vertical-align: middle;
+        padding-bottom: 5px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 740px){
+  .l-header {
+    width: 85%;
+    top: 8px;
+    &__container {
+      padding-left: 3%;
+      padding-top: 1%;
+      width: 100%;
+    }
+  }
+  .l-header h1 {
+    .p-item-logo {
+      &__logo {
+        width: 34%;
+        height: auto;
+        margin-right: 4px;
+      }
+      &__title {
+        font-size: 2.8vw;
+        text-align: left;
+        span {
+          display: block;
+          margin-top: 1px;
+          font-size: 3.3vw;
+          padding-left: 3px;
+          padding-top: 4px;
+        }
+        small {
+          display: inline-block;
+          font-size: 2.4vw;
+        }
+      }
+    }
+  }
+}
+
