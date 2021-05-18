@@ -5,9 +5,12 @@
 
 
 
-.l-top main {
-  padding-bottom: 0;
-  margin-top: 0;
+.l-top {
+  overflow-x: hidden;
+  main {
+    padding-bottom: 0;
+    margin-top: 0;
+  }
 }
 
 @media screen and (max-width: 760px){
@@ -42,6 +45,7 @@ section_news
   }
   &__post-date {
     margin-top: 0;
+    font-size: 13px;
   }
 }
 @media screen and (min-width: 761px) {
