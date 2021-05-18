@@ -99,7 +99,6 @@ c-button
   }
   &:hover {
     border: 2px solid colors.$light-border;
-    line-height: 35px;
     &::before{
       border-color: transparent transparent transparent colors.$light-border;
     }
